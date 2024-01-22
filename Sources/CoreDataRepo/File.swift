@@ -32,7 +32,7 @@ public class DataRepo<Entity:NSManagedObject> {
         _refresher = refresher
     }
     
-    func publisher() -> any Publisher<[Entity], Never> {
+    public func publisher() -> any Publisher<[Entity], Never> {
         NotificationCenter.default
             .publisher(for: _refresher, object: nil)
             .map { _ in }
@@ -45,7 +45,7 @@ public class DataRepo<Entity:NSManagedObject> {
             .eraseToAnyPublisher()
     }
    
-    func predicate(_ predicate: NSPredicate) {
+    public func predicate(_ predicate: NSPredicate) {
         _predicate = predicate
         
     }
