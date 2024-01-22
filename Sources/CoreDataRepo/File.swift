@@ -47,6 +47,7 @@ public class DataRepo<Entity:NSManagedObject> {
    
     func predicate(_ predicate: NSPredicate) {
         _predicate = predicate
+        
     }
 }
 
