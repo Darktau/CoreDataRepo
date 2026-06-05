@@ -190,7 +190,7 @@ Or pass your own notification name to keep different repos on separate channels.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Darktau/CoreDataRepo", from: "1.0.0")
+    .package(url: "https://github.com/Darktau/CoreDataRepo", from: "1.0.3")
 ]
 ```
 
